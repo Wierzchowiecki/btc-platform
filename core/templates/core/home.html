@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BTC Platform</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            width: min(500px, 90%);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 32px;
+        }
+
+        p {
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #22c55e;
+            color: #0f172a;
+            transition: 0.2s ease;
+        }
+
+        .btn:hover {
+            background: #16a34a;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>BTC Analytics Platform 🚀</h1>
+
+        <p>
+            Projekt demonstracyjny: Django + MySQL + OTP + wykres BTC + system użytkowników.
+        </p>
+
+        <a class="btn" href="{% url 'login' %}">
+            START
+        </a>
+
+        <div class="footer">
+            Autor: Krzysztof Wierzchowiecki<br>
+            Django 5 • MySQL • Chart.js
+        </div>
+    </div>
+</body>
+</html>

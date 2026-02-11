@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Panel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display:flex;
+      height:100vh;
+      margin:0;
+      justify-content:center;
+      align-items:center;
+      background:#f6f7fb;
+    }
+    .card {
+      background:white;
+      padding:32px;
+      border-radius:16px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+      text-align:center;
+      width:min(520px, 92vw);
+    }
+    .row {
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      margin-top:18px;
+    }
+    .btn {
+      padding:14px 18px;
+      border-radius:12px;
+      border:2px solid #111;
+      text-decoration:none;
+      font-weight:700;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Panel użytkownika</h1>
+    <p>Wybierz co chcesz zrobić:</p>
+
+    <div class="row">
+      <a class="btn" href="/bitcoin/">Inwestuj w Bitcoina</a>
+      <a class="btn" href="/insurance/">Ubezpieczenia</a>
+    </div>
+
+    <p style="margin-top:18px;"><a href="/">← Wróć na start</a></p>
+  </div>
+</body>
+</html>
